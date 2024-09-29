@@ -1,15 +1,17 @@
 {
   "name": "portfolio_react",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "1.0.0",
+  "homepage": "https://abhisheklakhani-it.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
-
-
   },
   "dependencies": {
     "@remixicon/react": "^4.2.0",
